@@ -2,6 +2,23 @@
   "name": "solid-qrcode",
   "version": "0.1.0",
   "description": "A responsive QR code component library for SolidJS with canvas rendering, gradients, and low-level drawing APIs.",
+  "license": "MIT",
+  "homepage": "https://github.com/Borber/solid-qrcode#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Borber/solid-qrcode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Borber/solid-qrcode/issues"
+  },
+  "keywords": [
+    "solidjs",
+    "solid",
+    "qrcode",
+    "qr-code",
+    "canvas",
+    "typescript"
+  ],
   "type": "module",
   "files": [
     "dist"
@@ -17,7 +34,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:lib",
+    "build": "bun run build:lib",
     "build:lib": "vite build && tsc -p tsconfig.lib.json",
     "build:demo": "vite build --mode demo",
     "preview": "vite preview",

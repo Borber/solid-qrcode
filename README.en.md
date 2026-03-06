@@ -2,9 +2,7 @@ English · [简体中文](./README.md)
 
 # solid-qrcode
 
-![SolidJS](https://img.shields.io/badge/SolidJS-1.x-2c4f7c?logo=solid)
-![Bun](https://img.shields.io/badge/Bun-ready-f9f1e1?logo=bun)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript&logoColor=white)
+![Bun](https://img.shields.io/badge/Bun-ready-f9f1e1?logo=bun) [![GitHub](https://img.shields.io/badge/GitHub-Borber%2Fsolid--qrcode-181717?logo=github)](https://github.com/Borber/solid-qrcode)
 
 A responsive QR code component library built for `SolidJS`.
 
@@ -30,6 +28,8 @@ bun add solid-qrcode solid-js
 ## Demo
 
 An online demo page will be added later.
+
+Repository: [`Borber/solid-qrcode`](https://github.com/Borber/solid-qrcode)
 
 For now, you can run it locally:
 
@@ -90,7 +90,7 @@ const fill: GradientFill = {
 ## `QRCode` Props
 
 | Prop         | Type                       | Default     | Description                                            |
-| ------------ | -------------------------- | ----------- | ------------------------------------------------------ |
+|--------------|----------------------------|-------------|--------------------------------------------------------|
 | `value`      | `string`                   | -           | QR code content                                        |
 | `size`       | `number`                   | `200`       | Display size of the canvas, normalized to at least `1` |
 | `level`      | `'L' \| 'M' \| 'Q' \| 'H'` | `'M'`       | Error correction level                                 |

@@ -2,9 +2,7 @@
 
 # solid-qrcode
 
-![SolidJS](https://img.shields.io/badge/SolidJS-1.x-2c4f7c?logo=solid)
-![Bun](https://img.shields.io/badge/Bun-ready-f9f1e1?logo=bun)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript&logoColor=white)
+![Bun](https://img.shields.io/badge/Bun-ready-f9f1e1?logo=bun) [![GitHub](https://img.shields.io/badge/GitHub-Borber%2Fsolid--qrcode-181717?logo=github)](https://github.com/Borber/solid-qrcode)
 
 专为 `SolidJS` 打造的响应式二维码组件库。
 
@@ -30,6 +28,8 @@ bun add solid-qrcode solid-js
 ## Demo
 
 在线 demo 页面后续补充。
+
+仓库地址：[`Borber/solid-qrcode`](https://github.com/Borber/solid-qrcode)
 
 目前可以直接本地运行：
 
@@ -89,16 +89,16 @@ const fill: GradientFill = {
 
 ## `QRCode` Props
 
-| Prop         | 类型                       | 默认值      | 说明                                   |
-| ------------ | -------------------------- | ----------- | -------------------------------------- |
-| `value`      | `string`                   | -           | 二维码内容                             |
+| Prop         | 类型                       | 默认值      | 说明                                  |
+|--------------|----------------------------|-------------|---------------------------------------|
+| `value`      | `string`                   | -           | 二维码内容                            |
 | `size`       | `number`                   | `200`       | 画布显示尺寸，最小会被归一到 `1`       |
-| `level`      | `'L' \| 'M' \| 'Q' \| 'H'` | `'M'`       | 纠错等级                               |
-| `minVersion` | `number`                   | `1`         | 最小二维码版本                         |
-| `maxVersion` | `number`                   | `40`        | 最大二维码版本                         |
-| `quietZone`  | `number`                   | `1`         | 静区模块数                             |
+| `level`      | `'L' \| 'M' \| 'Q' \| 'H'` | `'M'`       | 纠错等级                              |
+| `minVersion` | `number`                   | `1`         | 最小二维码版本                        |
+| `maxVersion` | `number`                   | `40`        | 最大二维码版本                        |
+| `quietZone`  | `number`                   | `1`         | 静区模块数                            |
 | `radius`     | `number`                   | `0.5`       | 模块圆角半径，范围会被限制在 `0 ~ 0.5` |
-| `foreground` | `string \| GradientFill`   | `'#111827'` | 前景色或渐变填充                       |
+| `foreground` | `string \| GradientFill`   | `'#111827'` | 前景色或渐变填充                      |
 | `background` | `string \| null`           | `null`      | 背景色，传 `null` 时为透明背景         |
 
 ## 类型定义
