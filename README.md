@@ -2,7 +2,7 @@
 
 # solid-qrcode
 
-![Bun](https://img.shields.io/badge/Bun-ready-f9f1e1?logo=bun) [![GitHub](https://img.shields.io/badge/GitHub-Borber%2Fsolid--qrcode-181717?logo=github)](https://github.com/Borber/solid-qrcode)
+[![npm](https://img.shields.io/npm/v/%40borber%2Fsolid-qrcode?logo=npm)](https://www.npmjs.com/package/@borber/solid-qrcode) ![Bun](https://img.shields.io/badge/Bun-ready-f9f1e1?logo=bun) [![GitHub](https://img.shields.io/badge/GitHub-Borber%2Fsolid--qrcode-181717?logo=github)](https://github.com/Borber/solid-qrcode)
 
 专为 `SolidJS` 打造的响应式二维码组件库。
 
@@ -20,7 +20,7 @@
 ## 安装
 
 ```bash
-bun add solid-qrcode solid-js
+bun add @borber/solid-qrcode solid-js
 ```
 
 > `solid-js` 是 peer dependency，需要由你的项目自行安装。
@@ -41,7 +41,7 @@ bun run dev
 ## 快速开始
 
 ```tsx
-import { QRCode } from "solid-qrcode"
+import { QRCode } from "@borber/solid-qrcode"
 
 export default function App() {
   return (
@@ -68,7 +68,7 @@ export default function App() {
 如果你不想停留在单色二维码，`foreground` 也可以直接接收渐变对象：
 
 ```tsx
-import { QRCode, type GradientFill } from "solid-qrcode"
+import { QRCode, type GradientFill } from "@borber/solid-qrcode"
 
 const fill: GradientFill = {
   type: "linear-gradient",
@@ -89,16 +89,16 @@ const fill: GradientFill = {
 
 ## `QRCode` Props
 
-| Prop         | 类型                       | 默认值      | 说明                                  |
-|--------------|----------------------------|-------------|---------------------------------------|
-| `value`      | `string`                   | -           | 二维码内容                            |
+| Prop         | 类型                       | 默认值      | 说明                                   |
+| ------------ | -------------------------- | ----------- | -------------------------------------- |
+| `value`      | `string`                   | -           | 二维码内容                             |
 | `size`       | `number`                   | `200`       | 画布显示尺寸，最小会被归一到 `1`       |
-| `level`      | `'L' \| 'M' \| 'Q' \| 'H'` | `'M'`       | 纠错等级                              |
-| `minVersion` | `number`                   | `1`         | 最小二维码版本                        |
-| `maxVersion` | `number`                   | `40`        | 最大二维码版本                        |
-| `quietZone`  | `number`                   | `1`         | 静区模块数                            |
+| `level`      | `'L' \| 'M' \| 'Q' \| 'H'` | `'M'`       | 纠错等级                               |
+| `minVersion` | `number`                   | `1`         | 最小二维码版本                         |
+| `maxVersion` | `number`                   | `40`        | 最大二维码版本                         |
+| `quietZone`  | `number`                   | `1`         | 静区模块数                             |
 | `radius`     | `number`                   | `0.5`       | 模块圆角半径，范围会被限制在 `0 ~ 0.5` |
-| `foreground` | `string \| GradientFill`   | `'#111827'` | 前景色或渐变填充                      |
+| `foreground` | `string \| GradientFill`   | `'#111827'` | 前景色或渐变填充                       |
 | `background` | `string \| null`           | `null`      | 背景色，传 `null` 时为透明背景         |
 
 ## 类型定义

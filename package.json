@@ -1,5 +1,5 @@
 {
-  "name": "solid-qrcode",
+  "name": "@borber/solid-qrcode",
   "version": "0.1.0",
   "description": "A responsive QR code component library for SolidJS with canvas rendering, gradients, and low-level drawing APIs.",
   "license": "MIT",
@@ -31,6 +31,9 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "dev": "vite",

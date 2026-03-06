@@ -2,13 +2,13 @@ English · [简体中文](./README.md)
 
 # solid-qrcode
 
-![Bun](https://img.shields.io/badge/Bun-ready-f9f1e1?logo=bun) [![GitHub](https://img.shields.io/badge/GitHub-Borber%2Fsolid--qrcode-181717?logo=github)](https://github.com/Borber/solid-qrcode)
+[![npm](https://img.shields.io/npm/v/%40borber%2Fsolid-qrcode?logo=npm)](https://www.npmjs.com/package/@borber/solid-qrcode) ![Bun](https://img.shields.io/badge/Bun-ready-f9f1e1?logo=bun) [![GitHub](https://img.shields.io/badge/GitHub-Borber%2Fsolid--qrcode-181717?logo=github)](https://github.com/Borber/solid-qrcode)
 
 A responsive QR code component library built for `SolidJS`.
 
 The goal is simple: deliver a modern, crisp, canvas-based QR rendering experience while keeping the API compact and easy to use.
 
-## Why `solid-qrcode`
+## Why `@borber/solid-qrcode`
 
 - Reactive by design and redraws naturally with `Solid` state updates
 - High-DPI aware by default, so QR codes stay sharp on Retina displays
@@ -20,7 +20,7 @@ The goal is simple: deliver a modern, crisp, canvas-based QR rendering experienc
 ## Install
 
 ```bash
-bun add solid-qrcode solid-js
+bun add @borber/solid-qrcode solid-js
 ```
 
 > `solid-js` is a peer dependency and must be installed by the consuming app.
@@ -41,7 +41,7 @@ bun run dev
 ## Quick Start
 
 ```tsx
-import { QRCode } from "solid-qrcode"
+import { QRCode } from "@borber/solid-qrcode"
 
 export default function App() {
   return (
@@ -68,7 +68,7 @@ The component renders a `canvas` and forwards most native `canvas` HTML attribut
 If a flat color feels too limited, `foreground` can also take a gradient object:
 
 ```tsx
-import { QRCode, type GradientFill } from "solid-qrcode"
+import { QRCode, type GradientFill } from "@borber/solid-qrcode"
 
 const fill: GradientFill = {
   type: "linear-gradient",
@@ -90,7 +90,7 @@ const fill: GradientFill = {
 ## `QRCode` Props
 
 | Prop         | Type                       | Default     | Description                                            |
-|--------------|----------------------------|-------------|--------------------------------------------------------|
+| ------------ | -------------------------- | ----------- | ------------------------------------------------------ |
 | `value`      | `string`                   | -           | QR code content                                        |
 | `size`       | `number`                   | `200`       | Display size of the canvas, normalized to at least `1` |
 | `level`      | `'L' \| 'M' \| 'Q' \| 'H'` | `'M'`       | Error correction level                                 |

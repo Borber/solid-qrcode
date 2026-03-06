@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "solid-qrcode",
+      "name": "@borber/solid-qrcode",
       "devDependencies": {
         "@types/node": "^25.3.5",
         "prettier": "^3.8.1",
@@ -13,7 +13,7 @@
         "vite-plugin-solid": "^2.11.10",
       },
       "peerDependencies": {
-        "solid-js": "^1.9.10",
+        "solid-js": "^1.9.11",
       },
     },
   },
