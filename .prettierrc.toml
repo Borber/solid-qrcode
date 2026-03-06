@@ -1,0 +1,7 @@
+semi = false
+tabWidth = 2
+
+# jsx 是否把 '>' 单独放一行
+bracketSameLine = true
+# 换行符类型
+endOfLine = 'lf'

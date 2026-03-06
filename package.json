@@ -1,0 +1,38 @@
+{
+  "name": "solid-qrcode",
+  "version": "0.1.0",
+  "description": "A responsive QR code component library for SolidJS with canvas rendering, gradients, and low-level drawing APIs.",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:lib",
+    "build:lib": "vite build && tsc -p tsconfig.lib.json",
+    "build:demo": "vite build --mode demo",
+    "preview": "vite preview",
+    "preview:demo": "vite preview --mode demo",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\" \"*.{json,ts,html}\""
+  },
+  "peerDependencies": {
+    "solid-js": "^1.9.11"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "solid-js": "^1.9.11",
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0-beta.16",
+    "vite-plugin-solid": "^2.11.10"
+  }
+}
